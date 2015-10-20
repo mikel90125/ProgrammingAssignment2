@@ -1,8 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Based on makeVector()/cachemean example
+## usage: 
+## makeCacheMatrix(x):  x = a square, invertible matrix. Creates a list of functions 
+##   which store and retrieve a matrix and it's inverse
+## cacheSolve (y): y = an object created using makeCacheMatrix(matrix). Solves, caches
+##   and returns the inverse of matrix x.  If the inverse is cached then the 
+##   the cached inverse is returned instead of recalculating
 
-## make a list including set input matrix, get input matrix, 
-## setinverse and getinverse functions 
+## store matrix and returen an object containin a list of functions: 
+##   set input matrix, get input matrix, 
+##   setinverse and getinverse  
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL

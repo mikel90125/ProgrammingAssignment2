@@ -39,14 +39,14 @@ print(y);
 print(cacheSolve(x));
 
 
-print("not inverible:");
+print("not inverible: should throw error");
 m = matrix(c(2,2,3,6,6,9,1,4,8), nrow=3, ncol=3, byrow = TRUE);
 
 print ("m");
 print(m);
 
-print ("solve(m)");
-print (solve(m));
+#print ("solve(m)");
+#print (solve(m));
 
 x = makeCacheMatrix(m);
 print("makeCacheMatrix(m)");
